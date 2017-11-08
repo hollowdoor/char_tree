@@ -10,7 +10,7 @@ Usage
 ---
 
 ```javascript
-const CharTree = require('../').CharTree;
+import { CharTree } from 'char-tree';
 let data = [
     'The Thing',
     'The Terminator',
@@ -38,6 +38,22 @@ console.log(ct.match('t'));
 //The second argument is a separator for words/phrases
 console.log(ct.nextPhrase('t', /[ ]+/));
 //The
+```
+
+### Give CharTree to a prototype
+
+```javascript
+import { charTreeMixin } from 'char-tree';
+
+class MyClass {
+    constructor(){
+        //Create the charTree property
+        this.initCharTree();
+    }
+}
+
+//Give MyClass all the methods of CharTree
+charTreeMixin(MyClass.prototype);
 ```
 
 About
