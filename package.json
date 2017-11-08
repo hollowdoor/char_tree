@@ -30,5 +30,17 @@
   },
   "main": "dist/bundle.js",
   "jsnext:main": "dist/bundle.es.js",
-  "module": "dist/bundle.es.js"
+  "module": "dist/bundle.es.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/char_tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/char_tree/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/char_tree#readme"
 }
