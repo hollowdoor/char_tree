@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "build": "ebam",
+    "test": "npm run build && node test/run.js"
+  },
+  "name": "char-tree",
+  "description": "A trie structure",
+  "keywords": [
+    "trie",
+    "tree",
+    "search",
+    "structure"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "ebam": {
+    "entry": "src/index.js",
+    "transforms": {
+      "dangerousForOf": false,
+      "dangerousTaggedTemplateString": false
+    },
+    "test": {
+      "dest": "test/code.js",
+      "src": "test/src.js"
+    }
+  },
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io)",
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  },
+  "main": "dist/bundle.js",
+  "jsnext:main": "dist/bundle.es.js",
+  "module": "dist/bundle.es.js"
+}
